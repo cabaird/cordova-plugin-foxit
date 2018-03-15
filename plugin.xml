@@ -1,0 +1,21 @@
+<?xml version='1.0' encoding='utf-8'?>
+<plugin id="FoxitPreview" version="1.0.0" xmlns="http://apache.org/cordova/ns/plugins/1.0" xmlns:android="http://schemas.android.com/apk/res/android">
+  <name>FoxitPreview</name>
+  <js-module name="FoxitPreview" src="www/FoxitPreview.js">
+      <clobbers target="window.FoxitPreview"/>
+  </js-module>
+  <platform name="ios">
+      <config-file parent="/*" target="config.xml">
+          <feature name="FoxitPreview">
+              <param name="ios-package" value="FoxitPreview"/>
+          </feature>
+      </config-file>
+      <source-file src="src/ios/FoxitPreview.m"/>
+      <source-file compiler-flags="-fno-objc-arc" framework="true" src="src/ios/libFoxitRDKUIExtensions.a"/>
+      <framework custom="true" src="src/ios/FoxitRDK.framework" embed="true"/>
+      <framework src="libstdc++.dylib" />
+      <source-file src="src/ios/uiextensions"/>
+      <resource-file src="src/ios/uiextensions_config.json" target-dir="../"/>
+      <resource-file src="src/ios/uiextensions/Resource/" target-dir="../"/>
+  </platform>
+</plugin>

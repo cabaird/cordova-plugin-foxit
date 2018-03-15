@@ -1,0 +1,13 @@
+{
+    "modules": {
+        "thumbnail": false,
+        "readingBookmark": false,
+        "outline": true,
+        "attachment": false,
+        "signature": false,
+        "search": false,
+        "pageNavigation": false,
+        "form": true,
+        "encryption": true
+    }
+}

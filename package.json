@@ -1,0 +1,21 @@
+{
+  "name": "FoxitPreview",
+  "version": "1.0.0",
+  "description": "",
+  "cordova": {
+    "id": "FoxitPreview",
+    "platforms": [
+      "ios"
+    ]
+  },
+  "keywords": [
+    "ecosystem:cordova",
+    "cordova-ios"
+  ],
+  "author": "christian_baird@homedepot.com",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/cabaird/cordova-plugin-foxit"
+  }
+}
